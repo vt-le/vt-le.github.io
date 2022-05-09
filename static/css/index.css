@@ -165,3 +165,7 @@ body {
 .footer {
   padding: 1rem 1rem 0rem !important;
 }
+
+.clustrmap {
+  padding: 1rem 1rem 1rem 1rem;
+}
