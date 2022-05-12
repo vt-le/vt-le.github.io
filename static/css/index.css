@@ -20,7 +20,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
 }
 
 .teaser {
@@ -157,8 +157,8 @@ body {
 }
 
 .instructorphoto img {
-  width: 220px;
-  border-radius: 220px;
+  width: 180px;
+  border-radius: 100px;
   margin-bottom: 0px;
 }
 
