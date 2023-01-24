@@ -1,5 +1,5 @@
 # Default ignored files
-.idea/*
+.idea/
 !.idea/misc.xml
 !.idea/modules.xml
 !.idea/vcs.xml
@@ -7,7 +7,7 @@
 !.idea/workspace.xml
 #/shelf/
 
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
