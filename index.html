@@ -124,8 +124,8 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+<div class="container mt-5">
+  <div class="post">
 
   <header class="post-header">
     <h1 class="post-title">
@@ -147,10 +147,12 @@
       <p> I am a Researcher at at Human-Computer Interaction (HCI) Laboratory, Sejong University, Korea. I am mainly interested in anomaly detection and generative models. Specifically, I work on anomaly detection in video using attention mechanism, transformers and diffusion models. I also work on Prohibited Item Detection in X-ray images. I am pursuing my PhD in <a href="http://en.sejong.ac.kr/eng/index.do">Sejong University's Computer Science Department</a> advised by <a href="http://home.sejong.ac.kr/~ykim/">Yong-Guk Kim</a>. Prior to that, I received my Master degree of Computer Science from <a href="https://en.hcmus.edu.vn/">University of Science - VNUHCM</a> in Vietnam.  </p> 
 
       <p> <strong>Contact:</strong> <span style="font-family:'Lucida Console', monospace">tuanlv at sju dot ac dot kr</span> 
-
+      </div>
+  </article>
 <p><strong>News:</strong> </p>
 <ul>
-  <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a></li>
+  <li>[9/20/2023] <a href="#">GoP</a></li>
+  <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is released.</li>
   <li>[5/25/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is available online.</li>
   <li>[4/21/2022] Code of <a href="https://vt-le.github.io/astnet/">ASTNet</a> is released.</li>
   <li>[4/09/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> (Attention-based Residual Autoencoder for Video Anomaly Detection) is accpeted by <a href="https://www.springer.com/journal/10489/">Applied Intelligence.</a></li>
@@ -178,7 +180,7 @@
       
     </div>
  <div class="periodical">    
-      <em>XXX</em>, 2023
+      <em><a href="https://www.sciencedirect.com/journal/expert-systems-with-applications">Expert Systems with Applications</a></em>, 2023
     </div>  
 
   <div class="links">
@@ -190,7 +192,7 @@
 
   <!-- Hidden abstract block -->
   <div class="abstract hidden">
-    <p>Automatic anomaly detection is a crucial task in video surveillance system intensively used for public safety and others. The present system adopts a spatial branch and a temporal branch in a unified network that exploits both spatial and temporal information effectively. The network has a residual autoencoder architecture, consisting of a deep convolutional neural network-based encoder and a multi-stage channel attention-based decoder, trained in an unsupervised manner. The temporal shift method is used for exploiting the temporal feature, whereas the contextual dependency is extracted by channel attention modules. System performance is evaluated using three standard benchmark datasets. Result suggests that our network outperforms the state-of-the-art methods, achieving 97.4% for UCSD Ped2, 86.7% for CUHK Avenue, and 73.6% for ShanghaiTech dataset in term of Area Under Curve, respectively.</p>
+    <p>Anomaly detection is to identify abnormal events against normal ones within surveillance videos mainly collected in ground-based settings. Recently, the need for drone data processing is rapidly growing as drones find new applications. However, as most aerial videos collected by flying drones contain moving backgrounds and others, it is necessary to deal with their spatio-temporal features in detecting anomalies. This study presents a transformer-based video anomaly detection method whereby we investigate a challenging aerial dataset and three benchmark ground-based datasets. The encoder of our U-net has a four-stage pyramid transformer structure, and each stage has a link to a corresponding spatio-temporal transformer stage. Then, this transformer produces hierarchical feature maps that are conveyed to the decoder as skip connections. Extensive evaluations including several ablation studies suggest that this network outperforms the state-of-the-art on Drone-anomaly dataset and three benchmark datasets. We expect the proposed transformer for U-net can find diverse applications in the video processing area. Code and model are available at https://vt-le.github.io/HSTforU/.</p>
   </div>
 </div>
 </div>
@@ -200,9 +202,10 @@
 </ol>
 
 <!-- <h2 class="year">2022</h2> -->
-  <ol class="bibliography">
+<ol class="bibliography">
 
- <li><div class="row">
+<li>
+  <div class="row">
   <div class="col-sm-2 abbr">
     <abbr class="badge">Journal</abbr>
   </div>
@@ -215,7 +218,7 @@
         
       </div>
    <div class="periodical">    
-        <em>Applied Intelligence</em>, 2022
+        <em><a href="https://www.springer.com/journal/10489">Applied Intelligence</a></em>, 2022
       </div>  
 
     <div class="links">
@@ -230,8 +233,11 @@
       <p>Automatic anomaly detection is a crucial task in video surveillance system intensively used for public safety and others. The present system adopts a spatial branch and a temporal branch in a unified network that exploits both spatial and temporal information effectively. The network has a residual autoencoder architecture, consisting of a deep convolutional neural network-based encoder and a multi-stage channel attention-based decoder, trained in an unsupervised manner. The temporal shift method is used for exploiting the temporal feature, whereas the contextual dependency is extracted by channel attention modules. System performance is evaluated using three standard benchmark datasets. Result suggests that our network outperforms the state-of-the-art methods, achieving 97.4% for UCSD Ped2, 86.7% for CUHK Avenue, and 73.6% for ShanghaiTech dataset in term of Area Under Curve, respectively.</p>
     </div>
   </div>
-</div>
+  </div>
 </li>
+</ol>
+</div>
+
 
 </article>
 
@@ -283,10 +289,10 @@ Program Committee Member
 
 
 <!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
+<script src="./js/common.js"></script>
 
 <!-- Load DarkMode JS -->
-<script src="/assets/js/dark_mode.js"></script>
+<script src="./js/dark_mode.js"></script>
 
 
 </html>
