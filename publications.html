@@ -136,9 +136,9 @@
         <abbr class="badge">Journal</abbr>
       </div>
     
-      <div id="le2022anomaly" class="col-sm-8">
+      <div id="le2024mogup" class="col-sm-8">
         
-          <div class="title">GoP: Guided Motion Prediction for Video Anomaly Detection</div>
+          <div class="title">MoGuP: Motion-guided Prediction for Video Anomaly Detection</div>
           <div class="author">
                 <em>Viet-Tuan Le</em> and <a href="http://home.sejong.ac.kr/~ykim/">Yong-Guk Kim</a>
             
@@ -150,13 +150,13 @@
         <div class="links">
           <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           <a href="#" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-          <a href="https://vt-le.github.io/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-          <a href="https://github.com/vt-le/" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+          <a href="https://moguprediction.github.io/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://github.com/vt-le/MoGuP" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
         </div>
     
         <!-- Hidden abstract block -->
         <div class="abstract hidden">
-          <p>...</p>
+          <p>Video anomaly detection aims to identify sporadic abnormal events among abundant normal ones in surveillance videos. For this purpose, many existing methods leverage U-Net architecture to predict or reconstruct frames, typically extracting spatial features within a sequence of previous consecutive frames. Yet, several approaches utilize motion information by introducing a two-stream network where the spatial and temporal streams flow independently, fusing the final outputs from these streams to obtain the anomaly score. Given a target optical flow and a sequence of previous frames, it would be desirable to design a framework that predicts the target frame with the intended motion corresponding to the provided optical flow. We present a novel motion-guided prediction framework that uses a proposed motion module to guide the prediction process for generating the output, that is close to its ground truth. Extensive evaluation, including ablation studies, suggests that the proposed approach outperforms the state-of-the-art on three standard benchmark datasets, i.e. UCSD Ped2, CUHK Avenue, and ShanghaiTech. This results suggest that it has the potential for real applications. The code and model are available at <a href="https://moguprediction.github.io">https://moguprediction.github.io</a>.</p>
         </div>
       </div>
     </div>
