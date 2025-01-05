@@ -151,11 +151,12 @@
   </article>
 <p><strong>News:</strong> </p>
 <ul>
-  <li>[9/20/2023] <a href="https://moguprediction.github.io/">MoGuP</a></li>
-  <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is released.</li>
-  <li>[5/25/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is available online.</li>
-  <li>[4/21/2022] Code of <a href="https://vt-le.github.io/astnet/">ASTNet</a> is released.</li>
-  <li>[4/09/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> (Attention-based Residual Autoencoder for Video Anomaly Detection) is accepted by <a href="https://www.springer.com/journal/10489/">Applied Intelligence.</a></li>
+    <li>[1/03/2025] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is available online.</li>
+    <li>[9/20/2023] <a href="https://github.com/vt-le/CrossAnomaly">CrossAnomaly</a></li>
+    <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is released.</li>
+    <li>[5/25/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is available online.</li>
+    <li>[4/21/2022] Code of <a href="https://vt-le.github.io/astnet/">ASTNet</a> is released.</li>
+    <li>[4/09/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> (Attention-based Residual Autoencoder for Video Anomaly Detection) is accepted by <a href="https://www.springer.com/journal/10489/">Applied Intelligence.</a></li>
 </ul>
 
 <p><strong>Selected publications:</strong> </p>
@@ -174,7 +175,7 @@
     
       <div id="le2024mogup" class="col-sm-8">
         
-          <div class="title">MoGuP: Motion-guided Prediction for Video Anomaly Detection</div>
+          <div class="title">CrossAnomaly: Contextual Cross-Modality Model for Video Anomaly Detection</div>
           <div class="author">
                 <em>Viet-Tuan Le</em> and <a href="http://home.sejong.ac.kr/~ykim/">Yong-Guk Kim</a>
             
@@ -190,9 +191,9 @@
         <div class="links">
           <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           <a href="#" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-          <a href="https://moguprediction.github.io/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-          <a href="https://github.com/vt-le/MoGuP" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-          <img src="https://img.shields.io/github/stars/vt-le/MoGuP?style=social">
+          <a href="https://github.com/vt-le/CrossAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://github.com/vt-le/CrossAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+          <img src="https://img.shields.io/github/stars/vt-le/CrossAnomaly?style=social">
         </div>
     
         <!-- Hidden abstract block -->
@@ -222,7 +223,7 @@
       
     </div>
     <div class="periodical">    
-      Under review
+      <em><a href="https://link.springer.com/article/10.1007/s10489-024-06042-4">Applied Intelligence</a></em>, 2025
     </div>
   <!--
  <div class="periodical">    
@@ -231,7 +232,7 @@
 
   <div class="links">
     <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-    <a href="#" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+    <a href="https://link.springer.com/content/pdf/10.1007/s10489-024-06042-4.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
     <a href="https://vt-le.github.io/HSTforU/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
     <a href="https://github.com/vt-le/HSTforU" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     <img src="https://img.shields.io/github/stars/vt-le/HSTforU?style=social">
@@ -240,7 +241,7 @@
 
   <!-- Hidden abstract block -->
   <div class="abstract hidden">
-    <p>Anomaly detection is to identify abnormal events against normal ones within surveillance videos mainly collected in ground-based settings. Recently, the need for drone data processing is rapidly growing as drones find new applications. However, as most aerial videos collected by flying drones contain moving backgrounds and others, it is necessary to deal with their spatio-temporal features in detecting anomalies. This study presents a transformer-based video anomaly detection method whereby we investigate a challenging aerial dataset and three benchmark ground-based datasets. The encoder of our U-net has a four-stage pyramid transformer structure, and each stage has a link to a corresponding spatio-temporal transformer stage. Then, this transformer produces hierarchical feature maps that are conveyed to the decoder as skip connections. Extensive evaluations including several ablation studies suggest that this network outperforms the state-of-the-art on Drone-anomaly dataset and three benchmark datasets. We expect the proposed transformer for U-net can find diverse applications in the video processing area. Code and model are available at <a href="https://vt-le.github.io/HSTforU/">https://vt-le.github.io/HSTforU/</a>.</p>
+    <p>Anomaly detection is to identify abnormal events against normal ones within surveillance videos mainly collected in ground-based settings. Recently, the demand for processing drone-collected data is rapidly growing with the expanding range of drone applications. However, as most aerial videos collected by flying drones contain dynamic backgrounds and others, it is necessary to deal with their spatio-temporal features in detecting anomalies. This study presents a transformer-based video anomaly detection method whereby we investigate a challenging aerial dataset and three benchmark ground-based datasets. A multi-stage transformer is leveraged as an encoder to generate multi-scale feature maps, which are then conveyed to a hierarchical spatio-temporal transformer, that is linked to a decoder and used to capture spatial and temporal information by utilizing a joint attention mechanism. Extensive evaluations including several ablation studies suggest that this network outperforms the state-of-the-art methods. We expect the proposed transformer for U-net can find diverse applications in the video processing area. Code and pre-trained models are publicly available at <a href="https://github.com/vt-le/HSTforU">https://github.com/vt-le/HSTforU</a>.</p>
   </div>
 </div>
 <!--HSTforU-->
@@ -267,7 +268,7 @@
         
       </div>
    <div class="periodical">    
-        <em><a href="https://www.springer.com/journal/10489">Applied Intelligence</a></em>, 2022
+        <em><a href="https://www.springer.com/journal/10489">Applied Intelligence</a></em>, 2023
       </div>  
 
     <div class="links">
