@@ -92,13 +92,6 @@
           </li>
 
           <li class="nav-item ">
-              <a class="nav-link" href="publications.html">
-                Publications
-                
-              </a>
-          </li>
-
-          <li class="nav-item ">
               <a class="nav-link" href="#">
                 CV                
               </a>
@@ -152,11 +145,11 @@
 <p><strong>News:</strong> </p>
 <ul>
     <li>[1/03/2025] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is available online.</li>
-    <li>[9/20/2023] <a href="https://github.com/vt-le/CrossAnomaly">CrossAnomaly</a></li>
+    <li>[9/20/2023] <a href="https://github.com/vt-le/FusedAnomaly">FusedAnomaly</a></li>
     <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is released.</li>
     <li>[5/25/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is available online.</li>
     <li>[4/21/2022] Code of <a href="https://vt-le.github.io/astnet/">ASTNet</a> is released.</li>
-    <li>[4/09/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> (Attention-based Residual Autoencoder for Video Anomaly Detection) is accepted by <a href="https://www.springer.com/journal/10489/">Applied Intelligence.</a></li>
+    <li>[4/09/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is accepted by <a href="https://www.springer.com/journal/10489/">Applied Intelligence.</a></li>
 </ul>
 
 <p><strong>Selected publications:</strong> </p>
@@ -175,7 +168,7 @@
     
       <div id="le2024mogup" class="col-sm-8">
         
-          <div class="title">CrossAnomaly: Contextual Cross-Modality Model for Video Anomaly Detection</div>
+          <div class="title">FusedAnomaly</div>
           <div class="author">
                 <em>Viet-Tuan Le</em> and <a href="http://home.sejong.ac.kr/~ykim/">Yong-Guk Kim</a>
             
@@ -191,14 +184,17 @@
         <div class="links">
           <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           <a href="#" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-          <a href="https://github.com/vt-le/CrossAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-          <a href="https://github.com/vt-le/CrossAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-          <img src="https://img.shields.io/github/stars/vt-le/CrossAnomaly?style=social">
+          <a href="https://github.com/vt-le/FusedAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://github.com/vt-le/FusedAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+          <img src="https://img.shields.io/github/stars/vt-le/FusedAnomaly=social">
         </div>
     
         <!-- Hidden abstract block -->
         <div class="abstract hidden">
-          <p>Video anomaly detection aims to identify sporadic abnormal events among abundant normal ones in surveillance videos. For this purpose, many existing methods leverage U-Net architecture to predict or reconstruct frames, typically extracting spatial features within a sequence of previous consecutive frames. Yet, several approaches utilize motion information by introducing a two-stream network where the spatial and temporal streams flow independently, fusing the final outputs from these streams to obtain the anomaly score. Given a target optical flow and a sequence of previous frames, it would be desirable to design a framework that predicts the target frame with the intended motion corresponding to the provided optical flow. We present a novel motion-guided prediction framework that uses a proposed motion module to guide the prediction process for generating the output, that is close to its ground truth. Extensive evaluation, including ablation studies, suggests that the proposed approach outperforms the state-of-the-art on three standard benchmark datasets, i.e. UCSD Ped2, CUHK Avenue, and ShanghaiTech. This results suggest that it has the potential for real applications. The code and model are available at <a href="https://moguprediction.github.io">https://moguprediction.github.io</a>.</p>
+          <p>Video anomaly detection aims to identify abnormal events occurring sporadically amid prevalent normal activities within surveillance footage. In pursuit of this, numerous existing methods learn the patterns of normal events by predicting or reconstructing frames based on preceding sequences. However, these methods often generate both normal and abnormal events with high fidelity, making it difficult to distinguish anomalies effectively.
+Some approaches utilize a two-stream network to extract spatial and motion information. In these methods, spatial and temporal streams operate independently, with limited interaction or information exchange. 
+To address these limitations, we propose a video anomaly detection that consists of an attention-based reconstruction network for modeling motion information and spatio-temporal fusion. to model motion information by reconstructing a single optical flow frame aligned with the corresponding ground truth frame. To integrate spatial and temporal features, we also propose a cross-model generation module that effectively combines spatial and motion features. 
+Extensive evaluations, including ablation studies, suggest that our approach outperforms the state-of-the-art methods on three standard benchmark datasets: UCSD Ped2, CUHK Avenue, and ShanghaiTech. These results highlight the framework's potential for a wide range of video processing applications. The code and pretrained models are available at <a href="https://github.com/vt-le/CrossAnomaly">https://github.com/vt-le/CrossAnomaly</a>.</p>
         </div>
       </div>
     </div>
@@ -273,7 +269,7 @@
 
     <div class="links">
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      <a href="https://link.springer.com/content/pdf/10.1007/s10489-022-03613-1.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       <a href="https://vt-le.github.io/astnet/" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
       <a href="https://github.com/vt-le/astnet" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
       <img src="https://img.shields.io/github/stars/vt-le/astnet?style=social">
@@ -306,9 +302,8 @@ Reviewer
 </ul>
 Program Committee Member
 <ul>
-  <li><a href="https://icit2022.humg.edu.vn/technical-committee/">International Conference on Intelligence of Things (ICIT), 2022</a></li>
-  <li><a href="https://cse.hcmut.edu.vn/icit2023/committee.php">International Conference on Intelligence of Things (ICIT), 2023</a></li>
-  <li><a href="https://icitconf.org/">International Conference on Intelligence of Things (ICIT), 2024</a></li>
+  <li>International Conference on Intelligence of Things (ICIT): <a href="https://icit2022.humg.edu.vn/technical-committee/">2022</a>, <a href="https://cse.hcmut.edu.vn/icit2023/committee.php">2023</a>, <a href="https://icitconf.org/">2024</a>, <a href="https://icitconf.org/">2025</a></li>
+  <li><a href="https://eidt.ou.edu.vn/">International Conference on Explainable Intelligence in Digital Twins (EIDT), 2025</a></li>
   
 </ul>
 
