@@ -144,8 +144,9 @@
   </article>
 <p><strong>News:</strong> </p>
 <ul>
+    <li>[9/20/2023] <a href="https://github.com/vt-le/DualAnomaly">DualAnomaly</a></li>
+    <li>[9/20/2023] <a href="https://github.com/vt-le/InterAnomaly">InterAnomaly</a></li>
     <li>[1/03/2025] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is available online.</li>
-    <li>[9/20/2023] <a href="https://github.com/vt-le/FusedAnomaly">FusedAnomaly</a></li>
     <li>[1/18/2023] <a href="https://vt-le.github.io/HSTforU/">HSTforU</a> is released.</li>
     <li>[5/25/2022] <a href="https://vt-le.github.io/astnet/">ASTNet</a> is available online.</li>
     <li>[4/21/2022] Code of <a href="https://vt-le.github.io/astnet/">ASTNet</a> is released.</li>
@@ -184,17 +185,16 @@
         <div class="links">
           <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           <a href="#" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-          <a href="https://github.com/vt-le/FusedAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
-          <a href="https://github.com/vt-le/FusedAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
-          <img src="https://img.shields.io/github/stars/vt-le/FusedAnomaly=social">
+          <a href="https://github.com/vt-le/InterAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+          <a href="https://github.com/vt-le/InterAnomaly" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+          <img src="https://img.shields.io/github/stars/vt-le/InterAnomaly=social">
         </div>
     
         <!-- Hidden abstract block -->
         <div class="abstract hidden">
-          <p>Video anomaly detection aims to identify abnormal events occurring sporadically amid prevalent normal activities within surveillance footage. In pursuit of this, numerous existing methods learn the patterns of normal events by predicting or reconstructing frames based on preceding sequences. However, these methods often generate both normal and abnormal events with high fidelity, making it difficult to distinguish anomalies effectively.
-Some approaches utilize a two-stream network to extract spatial and motion information. In these methods, spatial and temporal streams operate independently, with limited interaction or information exchange. 
-To address these limitations, we propose a video anomaly detection that consists of an attention-based reconstruction network for modeling motion information and spatio-temporal fusion. to model motion information by reconstructing a single optical flow frame aligned with the corresponding ground truth frame. To integrate spatial and temporal features, we also propose a cross-model generation module that effectively combines spatial and motion features. 
-Extensive evaluations, including ablation studies, suggest that our approach outperforms the state-of-the-art methods on three standard benchmark datasets: UCSD Ped2, CUHK Avenue, and ShanghaiTech. These results highlight the framework's potential for a wide range of video processing applications. The code and pretrained models are available at <a href="https://github.com/vt-le/CrossAnomaly">https://github.com/vt-le/CrossAnomaly</a>.</p>
+          <p>
+            Video anomaly detection (VAD) aims to identify irregular events in surveillance footage by learning patterns from normal data. Existing approaches often model appearance and motion independently or rely on complex memory-based mechanisms, which can restrict cross-modal interaction and increase computational overhead. To address these limitations, we propose InterAnomaly, a Hierarchical Spatio-Temporal Modality Integration Framework. In this framework, RGB sequences and optical flow are treated as complementary appearance and motion modalities. InterAnomaly incorporates an Attention-based Reconstruction Module (ARM) to model normal motion patterns and amplify anomalous discrepancies. These reconstructed features are then integrated with hierarchical appearance features via a Hierarchical Modality Prediction Module (HMPM), which progressively fuses information in a coarse-to-fine manner to predict future frames. By leveraging multi-scale modality interactions, the framework enhances both prediction accuracy and anomaly sensitivity. Extensive experiments on the UCSD Ped2, CUHK Avenue, and ShanghaiTech benchmarks demonstrate that InterAnomaly consistently outperforms state-of-the-art methods in frame-level AUC. Qualitative analysis and ablation studies further validate the effectiveness of our hierarchical integration and attention-based design. The source code to reproduce the results of the proposed InterAnomaly model will be made publicly available upon acceptance at: <a href="https://github.com/vt-le/InterAnomaly">https://github.com/vt-le/InterAnomaly</a>.
+          </p>
         </div>
       </div>
     </div>
